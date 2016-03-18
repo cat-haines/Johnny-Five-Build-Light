@@ -1,17 +1,15 @@
 sudo: false
 language: node_js
-
 before_install:
- - chmod +x ./scripts/*
- - ./scripts/before_install.sh
-
-script: ./scripts/build.sh
-
+- chmod +x ./scripts/*
+- "./scripts/before_install.sh"
+script: "./scripts/build.sh"
 after_success:
- - ./scripts/after_success.sh
+- "./scripts/after_success.sh"
 after_failure:
-- ./scripts/after_failure.sh
-
+- "./scripts/after_failure.sh"
 env:
   global:
-    - VARIABLE_NAME=value
+  - VARIABLE_NAME=value
+  - IFTTT_KEY=bE23wcpswHaGhx-lE7I599
+  - secure: HAF3r+7R04hBNionq0OQTW+/sbC9WRccFim7eLl6NNie5DbcwLgFgqt2pHu2e4T7TQrQNE8Zq7KDgMnx5AFNekbrt2BSsogH4OHY6qqN9TKPpWWnr7+v9TY3aUoYq+/sDUvuwm+jbgH5gt02SiAedb07QyRScaoxqXln4EWKoUb/2Honi7o5kEwrBsISWkkNOjNEyko7VAkTOgR3fsEx5YCK46JB1eCzzBFZHdx94hs6SxX0fXJzPKNNapQxdBm6ffi7wCiMHTE88scdaPpfh8lYxujFxnLYrfMKXaB8Zi86HgBBNFyvM4Ae1c/SyLDbv7frQ+6Zikll0jE1VLvkH7ZnemU7PVFvpVYgSNvAdTsU8tilED0UqJsKu3Ev2oMhpN8haZkN7X+EcKjl+D37GgLHRRiuKOJQU1Y5xgWqCp4XMwUloZKBIYL/GAA5Re4Yu2N0HwblpEKKYN7p/us23uIhyuMfuGS2ciJhBen94JsNfPxzc3K0+9ENGe/1zjCy3CG6Dp9fmZ2nIFujkUYbwPFEaSqfz1HtoqnLcyXjfGpBRwwWZdLDXv7Zk/QanvaN7VbM71YyppvMDBmrY4yijaZR6TOLQoSs1fnfHXhlJfSdZWv3dxsVQoJIob54Ij8J7ObiEvSAQUJc59RJjt2pTdfFO3wCr9Dub2rBqGPaMf0=
