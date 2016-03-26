@@ -2,4 +2,4 @@
 set -e # halt script on error
 
 echo Failure
-node ./scripts/indicator/index.js red
+./scripts/indicator.sh red
