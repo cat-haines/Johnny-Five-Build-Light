@@ -1,0 +1,20 @@
+{
+  "name": "particle-rgb-led",
+  "version": "1.0.0",
+  "description": "A simple command line script to control an RGB LED",
+  "main": "indicator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "particle",
+    "johnny-five",
+    "rgb"
+  ],
+  "author": "Cat Haines",
+  "license": "MIT",
+  "dependencies": {
+    "johnny-five": "^0.9.35",
+    "particle-io": "^0.12.0"
+  }
+}

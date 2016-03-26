@@ -20,8 +20,4 @@
     "url": "https://github.com/cat-haines/Johnny-Five-Build-Light/issues"
   },
   "homepage": "https://github.com/cat-haines/Johnny-Five-Build-Light#readme",
-  "dependencies": {
-    "johnny-five": "^0.9.32",
-    "particle-io": "^0.12.0"
-  }
 }

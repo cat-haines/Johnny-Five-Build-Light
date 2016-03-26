@@ -1,13 +1,16 @@
 sudo: false
 language: node_js
+
 before_install:
-- chmod +x ./scripts/*
+- cd scripts/indicator && npm install && cd ../..
+- chmod +x ./scripts/*.sh
 - "./scripts/before_install.sh"
+
 script: "./scripts/build.sh"
-after_success:
-- "./scripts/after_success.sh"
-after_failure:
-- "./scripts/after_failure.sh"
+
+after_success: "./scripts/after_success.sh"
+after_failure: "./scripts/after_failure.sh"
+
 env:
   global:
   - secure: owjfRWVpTjNHmdijbyvOkk0AslnQ1hX3vNUvnsn5rQUa/SG2ecPyrkk9tv+O4pjuKXSXA5/NtYhMndF8zbLZms0SD5Ke5n1wGh0XvUjwlgIB/cAGtM+2lGdstQP2SZojjdxaIz/NS8i8/UzZaHs3g0nmXIwpZ60jKnsgAXbzAheKozz2Q7kdXayOhu44BH4O8744ra5UON5AwsE34zM0tNY+HeUpZf5dLkE3Kv06IyAFu1nLwT/YJTJRSnsCMLDNQ3yv6RUOoIS8coA6OIv0ZvFQ9yVmHeXm6sAdh4J2RqsRCk2ECsxSr53vEjaMlBQXC9koXRuiJego8ot6QAZiEqzv/lWn1lF2xiJ7BNnJv8B80eTvJiUl6sUED1BKQx/br+TK4H9cx1v9P/dPwZi2UXI3MlbMlWLOJ7R4wmB29pJrzYRwH5CJNDIJgUPBgseDDyE62wljlOtTpOXUF81BCs1slaNAOLvvee7PST2p+qKr3EjXt1TGx5RUDt55VDo83zC/0DPCNhNbYrqU2e+pIH1gkYm9n6ZhSHA3Ps2PCpF1r1QEPunATrr5A6xfABLkCQDdjVhK+dYcy/vF+I0nxmtRAQm752qqnvkc/dTVO5dzS4bztzpLbzBL3e5tf+hxZRMrbnCuS/vEP+F64m1C/3C+avokQ2bJcaFQBxPA528=
