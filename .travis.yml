@@ -2,14 +2,15 @@ sudo: false
 language: node_js
 
 before_install:
-- cd scripts/indicator && npm install && cd ../..
-- chmod +x ./scripts/*.sh
-- "./scripts/before_install.sh"
+- "chmod +x ./travis-scripts/*.sh"
+- "./travis-scripts/indicator/install.sh"
+- "./travis-scripts/before_install.sh"
 
-script: "./scripts/build.sh"
+script:
+- "./travis-scripts/build.sh"
 
-after_success: "./scripts/after_success.sh"
-after_failure: "./scripts/after_failure.sh"
+after_success: "./travis-scripts/after_success.sh"
+after_failure: "./travis-scripts/after_failure.sh"
 
 env:
   global:

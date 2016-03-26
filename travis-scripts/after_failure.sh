@@ -2,4 +2,4 @@
 set -e # halt script on error
 
 echo Failure
-./scripts/indicator.sh red
+./travis-scripts/indicator/indicator.sh red

@@ -2,4 +2,4 @@
 set -e # halt script on error
 
 echo Success
-node ./scripts/indicator/index.js green
+./travis-scripts/indicator/indicator.sh green
