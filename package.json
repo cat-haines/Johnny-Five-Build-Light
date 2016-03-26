@@ -1,0 +1,27 @@
+{
+  "name": "johnny-five-build-light",
+  "version": "1.0.0",
+  "description": "Base project for a Johnny Five Build Light for Travis CI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cat-haines/Johnny-Five-Build-Light.git"
+  },
+  "keywords": [
+    "johnny-five",
+    "travisci"
+  ],
+  "author": "Cat Haines",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cat-haines/Johnny-Five-Build-Light/issues"
+  },
+  "homepage": "https://github.com/cat-haines/Johnny-Five-Build-Light#readme",
+  "dependencies": {
+    "johnny-five": "^0.9.32",
+    "particle-io": "^0.12.0"
+  }
+}
